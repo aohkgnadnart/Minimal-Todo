@@ -8,8 +8,8 @@ public abstract class CustomRecyclerScrollViewListener extends RecyclerView.OnSc
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         super.onScrolled(recyclerView, dx, dy);
-        Log.d("OskarSchindler", "Scroll Distance "+ scrollDist + " " + dx + " " + dy);
-        if(dy - dyBefore > 0){
+//        Log.d("OskarSchindler", "Scroll Distance "+ scrollDist + " " + dx + " " + dy);
+        if(dy - dyBefore >= 0){
             show();
         }
         else{
